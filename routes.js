@@ -4,17 +4,18 @@ const router = express.Router()
 //コントローラーファイルのよみこみ
 const homeController = require('./controllers/HomeController')
 const itemController = require('./controllers/ItemController')
-const loginController = require('./controllers/LoginControllers')
-const userController = require('./controllers/UserControllers')
+const loginController = require('./controllers/LoginController')
+const userController = require('./controllers/UserController')
 
 //HomeController
 router.get('/', homeController.index)
 router.get('/profile', homeController.profile)
 
 //ItemController
+router.get('/item', itemController.index)
 router.get('/item/:id', itemController.show)
 
-//userController
+//UserController
 router.get('/user/edit/:id', userController.edit)
 
 //LoginController

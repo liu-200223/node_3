@@ -2,7 +2,6 @@ exports.index = (req, res) => {
     let data = {}
     data.title = 'ログイン'
     res.render('login/index.ejs', data)
-
 }
 
 exports.auth = (req, res) => {

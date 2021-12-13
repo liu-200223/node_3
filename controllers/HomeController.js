@@ -1,6 +1,6 @@
 exports.index = (req,res) => {
     let data = {}
-    data.message = 'ようこそ！！！'
+    data.message = 'ようこそ!!!'
     res.render('index.ejs', data)
 }
 exports.profile = (req, res ) => {
